@@ -1,3 +1,277 @@
 /*
  * Estilos de tu proyecto
  */
+
+body {
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* Estilo sección del encabezado */
+#encabezado {
+	width: 100%;
+	height: 70px;
+	background: #FFC107;
+	float: right;
+	
+}
+
+/* Menu hamburguesa*/
+.nav {
+  height: 300px;
+  width: 20%;
+  position: absolute;
+  top: 50px;
+  display: none;
+  font-family:sans-serif;
+  font-size: 18px;
+  background-color: white;
+  overflow-y: scroll;
+}
+
+.nav li {
+  list-style-type: none;
+  display: block;
+  text-align: left;
+  line-height: 3;
+  color: #000000;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px;
+}
+ul.nav_list {
+  width: 60%;
+}
+
+.nav-toggle {
+  display: none;
+  z-index: 50000;
+}
+
+.nav-toggle-label_one{
+	padding-top: 5px;
+	font-family:sans-serif;
+	padding-right: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+
+.nav-toggle-label::after {
+ font-family:sans-serif;
+ font-size: 18px;
+ font-weight: bold;
+ content: "☰";
+}
+
+label {
+  cursor: pointer;
+}
+
+.nav-toggle:checked ~ .nav {
+  right: 0;
+  display: block;
+}
+
+.headmenu {
+  height: 45px;
+  text-align: right;
+  padding-top: 18px;
+}
+
+.header_main {
+ 
+  height: 488px;
+  margin-right: 15px;
+  margin-left: auto;
+}
+/*Estilos pagina overview*/
+
+.primera {
+	width: 100%;
+
+}
+
+/*Estilo para el submenu del menu principal los checkbox */
+.nav_list  li input {
+	width: 15px;
+	height: 15px;
+	border-width: 2px;
+}
+
+
+/* Contenedor principal que almacena el segundo menu y el iframe*/
+.contenedor {
+	width: 100%;
+}
+
+
+/* Estilo para el logo de laboratoria  */
+.logo {
+	text-align: center;
+
+}
+
+/* Estilo para el  segundo menu de la pagina */
+#segundo_menu {
+	width: 25%;
+	height: 700px;
+	border-right: 1px solid #DCDCDC;
+	display: inline-block;
+}
+
+#menu_secundario{
+	margin-top: 10px;
+}
+
+#menu_secundario ul li active{
+	background: #DCDCDC;
+}
+
+.one {
+	list-style: none;
+
+}
+
+
+/* Estilo para los link del menu lateral izquierdo*/
+.one a {
+text-decoration:none;
+font-family:sans-serif;
+font-size: 18px;
+color:#000;
+}  
+
+
+.one li:hover {
+	width: 30%;
+	background: #DCDCDC;
+	cursor: pointer;
+	
+}
+
+
+#three {
+	width: 75%;
+	margin-top: 200px;
+	float: right;
+	margin-top: -690px;
+	height: 650px;
+}
+
+
+/*Estilos cuadro alumnas inscritas y desercion*/
+.primera{
+	display: block;
+
+}
+
+#inscritas {
+	width: 28%;
+	height: 300px;
+	background: #F7F7F7;
+	padding:10px;
+	margin: 10px;
+	display: inline-block;
+}
+
+.titulo {
+    text-align: center;
+    font-family:sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.titulo_2 {
+	font-size: 15px;
+    padding: 10px;
+    font-weight: bold;
+	text-align: center;
+	display: block;
+}
+
+#alumnas_inscritas {
+	width: 45%;
+	background: #E1E1E1;
+	display: inline-block;
+	height: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#alumnas_inscritas_valor {
+	width: 45%;
+	height: 30px;
+	background: #E1E1E1;
+	display: inline-block;
+	padding-top: 10px;
+}
+
+#promedio_estudiante {
+	width: 45%;
+	height: 30px;
+	background: #E1E1E1;
+	display: inline-block;
+	padding-top: 10px;
+}
+
+#porcentaje_promedio {
+	width: 45%;
+	height: 30px;
+	background: #E1E1E1;
+	display: inline-block;
+	padding-top: 10px;
+}
+
+#alumnas_inscritas_porcentaje {
+	width: 45%;
+	height: 30px;
+	background: #E1E1E1;
+	display: inline-block;
+	padding-top: 10px;
+}
+
+#desercion_alumnas {
+	width: 45%;
+	background: #E1E1E1;
+	display: inline-block;
+	height: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+#nps {
+	width: 28%;
+	height: 300px;
+	background: #F7F7F7;
+	padding:10px;
+	margin: 10px;
+	display: inline-block;
+}
+
+#promedio {
+	width: 28%;
+	height: 300px;
+	background: #F7F7F7;
+	padding:10px;
+	margin: 10px;
+	display: inline-block;
+}
+
+
+
+

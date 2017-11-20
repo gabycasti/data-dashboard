@@ -1,0 +1,189 @@
+/*
+ * Estilos de tu proyecto
+ */
+
+body {
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* Estilo sección del encabezado */
+#primer_menu {
+	width: 100%;
+	height: 70px;
+	background: #FFC107;
+	float: right;
+	
+}
+
+/* Estilo menu principal del encabezado  */
+#menu_principal {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	text-align: center;
+	color:#000;
+}
+
+/* Estilo para quitarle las viñetas al submenu del menu principal */
+.hide {
+  list-style: none;
+  
+}
+
+/* Estilo para quitar las viñetas al submenu del primer menu*/
+.submenu {
+	list-style: none;
+
+}
+
+/* Estilo de los submenu del menu principal*/
+.submenu li {
+	border:30px;
+	padding: 15px 10px;
+	text-align: center;
+	display: none;
+	
+}
+
+.submenu li:hover{
+	border:30px;
+	padding: 15px 10px;
+	text-align: center;
+	display: block;
+	
+}
+
+
+/* Contenedor principal que almacena el segundo menu y el iframe*/
+.contenedor {
+	width: 100%;
+}
+
+
+/* Estilo para el logo de laboratoria  */
+.logo {
+	text-align: center;
+
+}
+
+/* Estilo para el  segundo menu de la pagina */
+#segundo_menu {
+	width: 30%;
+	height: 700px;
+	border-right: 1px solid #DCDCDC;
+	display: inline-block;
+}
+
+#menu_secundario{
+	margin-top: 10px;
+	
+}
+
+.one {
+	list-style: none;
+}
+
+
+#three {
+	width: 70%;
+	margin-top: 200px;
+	float: right;
+	margin-top: -630px;
+	height: 650px;
+}
+
+/*menu desplegable*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.menu-container {
+    width: 100%;
+    background: #FFC107;
+    list-style: none; 
+}
+
+.menu-nav {
+ position: relative;
+}
+
+.sub-menu {
+    width: 320px;
+    position: absolute;
+    display: none;
+    background: #fff;
+}
+
+.sub-menu h1 {
+    margin-left: -70px;
+    font-size: 18px;
+}
+
+.sub-menu li a {
+    margin-left: -50px;
+    color: #000;
+    text-decoration: none;
+    border: none;
+}
+
+.menu-nav ul li:hover>ul {
+    display: block;
+    border: none;
+}
+
+.menu-nav>ul>li:after {
+    content: "\25BC"; 
+    font-size: 20px;
+    padding-left: 5px; 
+    display: inline;
+    position: relative;    
+}
+
+/*Estilos pagina overview*/
+
+.primera {
+	width: 100%;
+
+}
+
+/*Estilos cuadro alumnas inscritas y desercion*/
+#inscritas {
+	width: 30%;
+	height: 100px;
+	background: #DCDCDC;
+	display: inline-block;
+}
+
+#alumnas_inscritas {
+	display: inline-block;
+}
+
+#desercion_alumnas {
+	padding-right: 5px;
+	float:right;
+}
+
+
+
+#nps {
+	width: 30%;
+	height: 100px;
+	background: #DCDCDC;
+	padding-right: 30px;
+	float: right;
+}
+
+#promedio {
+	width: 30%;
+	height: 100px;
+	background: #DCDCDC;
+	float: right;
+}
+
+
+
+
