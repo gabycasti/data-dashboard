@@ -45,8 +45,8 @@ function procesarDatos()
 
     	   ////////////////////////////////////////////////////////////////////
 
-
-    	   ///////////////////////////////////////////////////////////////////
+           ///////////////////////////////////////////////////////////////////
+    	   //promedio tech y hse
        var totaltech = 0;
        var totalhse = 0;
        var totaltechstudent = 0;
@@ -64,7 +64,7 @@ function procesarDatos()
     			totalhsestudentAcum=0;
 
     			console.log (totaltechstudentAcum)
-
+                //Calculando el totla de porcentajes en puntajes tech y hse
     			for (j=0; j<data.SCL['2016-2'].students[i].sprints.length; j++)
     			{
                      totaltechstudent= data.SCL['2016-2'].students[i].sprints[j].score.tech;
@@ -86,12 +86,37 @@ function procesarDatos()
 
                  }
 
-
                    document.getElementById('promedio_estudiante').innerHTML = totaltech;
                   
 
     		}
     			//console.log(data.SCL['2016-2'].students[i].sprints[0].score.tech)
+               
+       //Determinando el porcentaje de las estudiantes satisfechas
+       
+       var estudianteSatis = 0;
+       
+        for (var i =0; i < estudiantesSatis; i++)
+        {
+        	  if(data.SCL['2016-2'].ratings.sprint[i].length > 0)
+        	  {
+        	  	
+               
+
+                 totaltechstudentAcum = (totaltechstudentAcum / 4);
+                 totalhsestudentAcum =   (totalhsestudentAcum / 4);
+
+                 if (totaltechstudentAcum >= 70 &&  totalhsestudentAcum >= 70)
+                 {
+
+                  	totaltech++;
+
+                 }
+
+                   document.getElementById('promedio_estudiante').innerHTML = totaltech;
+                  
+
+    		}
     	}
 
     				
@@ -138,6 +163,35 @@ function procesarDatos()
 
     	} 
     }
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////
+// Código Students
+
+var input = document.querySelectorAll("label.check input");
+if(input !== null) {
+  [].forEach.call(input, function(el) {
+    if(el.checked) {
+      el.parentNode.classList.add('c_on');
+    }
+    el.addEventListener("click", function(event) {
+      event.preventDefault();
+      el.parentNode.classList.toggle('c_on');
+    }, false);
+  });
+}
+console.log(data);
+var studentFinder = document.getElementById('studentFinder');
+studentFinder.addEventListener('click', function() {
+    alert('touch me')
+})
+
+
+
+
 
 
 

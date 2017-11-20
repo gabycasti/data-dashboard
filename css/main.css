@@ -244,16 +244,6 @@ color:#000;
 
 }
 
-
-
-
-
-
-
-
-
-
-
 #nps {
 	width: 28%;
 	height: 300px;
@@ -272,6 +262,81 @@ color:#000;
 	display: inline-block;
 }
 
+/*  Estilos students*/
+
+.checkbox {
+  width: 30%;
+  height: auto;
+  background-color: #fff;
+  float: left;
+  border-radius: 6px;
+  display: block;
+}
+.filter1 {
+  display: block;
+}
+input #checkbox1 {
+  display: inline-block;
+}
+label .text1 {
+  color: #3c4858;
+  size: 16px;
+  padding: 0px;
+  margin: 0px;
+  display: inline-block;
+}
+.filter2 {
+  display: block;
+}
+input #checkbox2 {
+  display: inline-block;
+}
+label .text2 {
+  color: #3c4858;
+  size: 16px;
+  padding: 0px;
+  margin: 0px;
+  display: inline-block;
+}
+.filter3 {
+  display: block;
+}
+input #checkbox3 {
+  display: inline-block;
+}
+label .text3 {
+  color: #3c4858;
+  size: 16px;
+  padding: 0px;
+  margin: 0px;
+  display: inline-block;
+}
+#container {
+  display: inline-block;
+  width: 50%;
+  border: none;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+  margin-left: 5%;
+  height: auto;
+  border-radius: 6px;
+}
+/* search */
+#studentFinder { 
+    background-repeat: no-repeat; 
+    width: 50%;
+    font-size: 16px;
+    border: none; 
+    height: 93%;
+    background: transparent;
+} 
+.fa-search {
+  color: #BCBCBC;
+  width: 5%;
+  height: 10%;
+  display: inline-block;
+  margin-top: 1%;
+}
 
 
 
