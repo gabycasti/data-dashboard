@@ -1,0 +1,171 @@
+/*aplicación de boxsizing*/
+*{
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+/*aplicar margen y estilo de fuente a todo el body*/
+body{
+	margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F7F7F7;
+}
+/*estilos del header, centrado de logo, color*/
+header{
+	height: 4em;	
+	background-color: #FFF;
+	text-align: center;
+	padding-top: 0.2em;
+}
+
+/*tamaño logo del header*/
+.logo{
+	height: 4em;
+}
+
+/*estilos contenedor de perfil*/
+aside{
+	background-color: #F7F7F7;
+	height: auto;
+	display: inline-block;
+	width: 18%;
+	position: fixed;
+	padding: 1em;
+}
+
+/*ancho de contenido central y posicion*/
+main{
+	width: 83%;
+	float: right;
+
+}
+
+/**/
+#menu{
+	width: 100%;
+	height: 7em;
+	background-color: #E1E1E1;
+	display:inline-block;
+	padding-left: 0;
+}
+
+#barra{
+	  position: relative;
+	  width: 60%;
+	  left:15em;
+	  top:4.7em;
+}
+
+#barra a{
+	color:rgb(92, 89, 89);
+	font-size: 30px;
+}
+
+/*quitar aspecto de link a menú*/
+a{
+	text-decoration: none;
+	margin-right: 2em;
+}
+
+/*Estilizando elementos del menú desplegable*/
+#generaciones{
+	margin:0;
+	
+}
+
+#generaciones ul{
+	list-style: none;
+	font-size: 1.1em;
+}
+
+.gen li a{
+background-color: rgb(255, 183, 0);
+border: 1px solid #E0E0E0;
+color:rgb(92, 89, 89);
+font-size: 20px;
+text-align: center;
+display:block;
+margin:0;
+}
+
+.gen li a:hover{
+	background-color: rgb(214, 176, 80);
+}
+
+/*Los li directos de gen tendran la propiedad float left*/
+.gen > li{
+	float: left;
+}
+
+/* Los ul de gen no serán visibles hasta hacer hover*/
+ .gen li ul{
+	   display: none ;
+	   position: absolute;
+	   min-width: 8.7em;
+}
+	
+.gen li:hover > ul{
+	display:block
+}
+
+
+#overview{
+	background-color: #ECEC93;
+	width: 100%;
+	height: auto;
+	padding: 2em;
+}
+
+#students{
+	background-color: #B2F0B2;
+	width: 100%;
+	height: auto;
+	padding: 2em;
+}
+
+#jedis{
+	background-color: #B7C4FD;
+	padding: 2em;
+}
+
+/*clase a utilizar para ocultar contenedores*/
+.ocultar{
+	display: none;
+}
+
+/*Estilizando Aside*/
+#photo {
+	text-align: center;
+	padding-bottom: 2em;
+}
+
+#links-profile ul {
+	list-style: none;
+	font-size: 1em;
+	line-height: 1.5;
+	padding-top: 5em;
+}
+
+#links-profile a {
+	text-align: center;
+	color: rgb(92, 89, 89);
+}
+
+#links-profile a:hover{
+	background-color: rgb(255, 183, 0);
+}
+
+/*Overview*/
+
+#deserters{
+	  width: 25%;
+	  height: auto;
+	  background-color: rgb(155, 190, 155);
+}
+
+#inFalse{
+	width: 25%;
+	height: auto;
+	background-color: rosybrown;
+}

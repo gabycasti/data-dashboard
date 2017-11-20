@@ -1,3 +1,103 @@
-/*
- * Estilos de tu proyecto
- */
+*{
+	 -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: auto; 
+      padding: 0; 
+}
+
+body {
+	background-color: #F7F7F7;
+	margin: 0 auto;
+	box-sizing: border-box;
+	background-size: 100%;
+	padding: 3%;
+	font-family: "Roboto";
+}
+
+
+.checkbox {
+	width: 30%;
+	height: auto;
+	background-color: #fff;
+	float: left;
+	border-radius: 6px;
+	display: block;
+}
+
+.filter1 {
+	display: block;
+}
+
+input #checkbox1 {
+	display: inline-block;
+}
+
+label .text1 {
+	color: #3c4858;
+	size: 16px;
+	padding: 0px;
+	margin: 0px;
+	display: inline-block;
+}
+
+.filter2 {
+	display: block;
+}
+
+input #checkbox2 {
+	display: inline-block;
+}
+
+label .text2 {
+	color: #3c4858;
+	size: 16px;
+	padding: 0px;
+	margin: 0px;
+	display: inline-block;
+}
+
+.filter3 {
+	display: block;
+}
+
+input #checkbox3 {
+	display: inline-block;
+}
+
+label .text3 {
+	color: #3c4858;
+	size: 16px;
+	padding: 0px;
+	margin: 0px;
+	display: inline-block;
+}
+
+#container {
+	display: inline-block;
+	width: 50%;
+	border: none;
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+	margin-left: 5%;
+	height: auto;
+	border-radius: 6px;
+}
+// search //
+
+#studentFinder { 
+    background-repeat: no-repeat; 
+    width: 50%;
+    font-size: 16px;
+    border: none; 
+    height: 93%;
+    background: transparent;
+}	
+
+.fa-search {
+	color: #BCBCBC;
+	width: 5%;
+	height: 10%;
+	display: inline-block;
+	margin-top: 1%;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Data Dashboard</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://use.fontawesome.com/a5cf7a6c13.js"></script>
+  </head>
+  <body>
+    <!-- primera sección, header con logo laboratoria -->
+    <header>
+      <img class="logo" src="assets/images/logo-laboratoria.svg" alt="laboratoria">
+    </header>
+    <!-- sección lateral, contiene datos del perfil -->
+    <aside id="profile"> 
+<div id="photo">
+  <img src="assets/images/FotoVale.jpg" alt="">
+  <h2>Valentina Smith</h2>
+  <p>Santiago de Chile</p>
+  <p>Training Manager</p>
+  </div>
+<div id="links-profile">
+  <a href="#"> <i class="fa fa-file" aria-hidden="true"></i> Documents </a>
+  <a href="#"><i class="fa fa-file-text" aria-hidden="true"></i> Forms </a>
+  <ul>
+    <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+    <li><a href="#"><i class="fa fa-comments" aria-hidden="true"> Social Media</i></a></li>
+  </ul>
+</div>
+   </aside>
+
+    <!-- contenido central -->
+    <main>
+      <!--menú principal  para navegar en pestañas  -->
+      <nav id="menu">
+        <div id= "barra">
+<a href="#" id="over">
+  Overview
+  <i class="fa fa-bar-chart" aria-hidden="true"></i>
+</a>
+<a href="#" id="stud">
+  Estudiantes
+  <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+</a>
+<a href="#" id="teachers">
+  Jedis
+  <i class="fa fa-users" aria-hidden="true"></i>
+</a>
+</div>
+
+<div id="generaciones">
+  <ul class="gen">
+    <li>
+      <a href="#">
+        Generación
+        <i class="fa fa-caret-down" aria-hidden="true"></i>
+      </a>
+      <ul>
+        <li>
+          <a href="#">SCL2016-2</a>
+        </li>
+        <li>
+          <a href="#">SCL2017-1</a>
+        </li>
+        <li>
+          <a href="#">SCL2017-2</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+         
+      </nav>
+
+      <!-- contenedor que se muestra por defecto -->
+      <div id="overview">
+
+        <div id= "deserters"></div>
+        <div id= "inFalse"></div>
+        <img src="assets/images/rectangular-graphic.png" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quo quibusdam voluptas quae iusto, eos voluptatibus temporibus tempora voluptatum, sapiente expedita eligendi distinctio dolores odio soluta inventore velit quaerat neque.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, aspernatur excepturi doloribus reiciendis est sequi possimus asperiores praesentium sapiente, vero ducimus fugiat nobis rerum et! Tenetur corrupti, velit ipsum eos.</p>
+        <img src="assets/images/circle-graphic.png" alt="">
+      </div>
+
+      <!-- contenedor con información de estudiantes -->
+      <div id="students" class="ocultar">
+        <img src="assets/images/circle-graphic.png" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quo quibusdam voluptas quae iusto, eos voluptatibus temporibus tempora voluptatum, sapiente expedita eligendi distinctio dolores odio soluta inventore velit quaerat neque.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, aspernatur excepturi doloribus reiciendis est sequi possimus asperiores praesentium sapiente, vero ducimus fugiat nobis rerum et! Tenetur corrupti, velit ipsum eos.</p>
+         <img src="assets/images/rectangular-graphic.png" alt="">
+    
+      </div>
+
+      <!-- contendor información de jedis -->
+      <div id="jedis" class="ocultar">
+          <img src="assets/images/graph.png" alt="">
+     
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, aspernatur excepturi doloribus reiciendis est sequi possimus asperiores praesentium sapiente, vero ducimus fugiat nobis rerum et! Tenetur corrupti, velit ipsum eos.</p>
+        <img src="assets/images/circle-graphic.png" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui praesentium, atque sunt doloribus modi officia eius voluptate iste cupiditate voluptatibus eaque provident. Cumque aliquam, iste repudiandae dolorem autem at laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem eligendi incidunt ipsum, autem dolore eos ipsam reiciendis voluptas veritatis repellat fugit consequatur perspiciatis quod blanditiis provident architecto hic, error, quis!</p>
+      </div>
+
+    </main>
+    
+    
+    <!-- Base de datos -->
+    <script src="./js/data.js"></script>
+    <!-- Aquí va tus archivos JS -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
