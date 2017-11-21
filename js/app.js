@@ -118,7 +118,8 @@ function procesarDatos()
 
           
 	    	  //console.log("nps "+nps+" "+promoters+" "+detractors)
-               document.getElementById('nps_valor').innerHTML = number_format(nps,0,'','');
+               document.getElementById('nps_valor').innerHTML = number_format(nps,0,'','')+" <br>Promedio NPS ";
+               document.getElementById('nps_porcentaje').innerHTML = "Promoters "+number_format(promoters,0,'','')+'% Passive '+number_format(passive,0,'','')+'% Detractors '+number_format(detractors,0,'','')+'%<br>';
 
 	    	//DETERMINANDO La cantidad y el porcentaje que representa el total de estudiantes que superan 
 	    	//la meta de puntos técnicos en promedio y por sprint.	
@@ -190,11 +191,11 @@ function procesarDatos()
 			if (porcentajestudentsupera4 > 0)
 				porcentajestudentsupera4 = porcentajestudentsupera4 / cantidadstudentsprint4;
 
-			console.log (porcentajestudentsupera1+" "+porcentajestudentsupera2+" "+porcentajestudentsupera3+" "+porcentajestudentsupera4)
-			console.log (cantidadstudentsprint1+" "+cantidadstudentsprint2+" "+cantidadstudentsprint3+" "+cantidadstudentsprint4)
+			//console.log (porcentajestudentsupera1+" "+porcentajestudentsupera2+" "+porcentajestudentsupera3+" "+porcentajestudentsupera4)
+			//console.log (cantidadstudentsprint1+" "+cantidadstudentsprint2+" "+cantidadstudentsprint3+" "+cantidadstudentsprint4)
 
                  
-
+             document.getElementById('prom_tech').innerHTML = "Sprint1 "+number_format(cantidadstudentsprint1,0,'','')+'% Sprint2 '+number_format(cantidadstudentsprint2,0,'','')+'% Sprint3 '+number_format(cantidadstudentsprint3,0,'','')+'Sprint4 '+number_format(cantidadstudentsprint4,0,'','')+'%<br>';
 
          // DETERMINANDO HSE
 
@@ -269,10 +270,10 @@ function procesarDatos()
 			if (porcentajestudentsupera4 > 0)
 				porcentajestudentsupera4 = porcentajestudentsupera4 / cantidadstudentsprint4;
 
-			console.log (porcentajestudentsupera1+" "+porcentajestudentsupera2+" "+porcentajestudentsupera3+" "+porcentajestudentsupera4)
-			console.log (cantidadstudentsprint1+" "+cantidadstudentsprint2+" "+cantidadstudentsprint3+" "+cantidadstudentsprint4)
+			//console.log (porcentajestudentsupera1+" "+porcentajestudentsupera2+" "+porcentajestudentsupera3+" "+porcentajestudentsupera4)
+			//console.log (cantidadstudentsprint1+" "+cantidadstudentsprint2+" "+cantidadstudentsprint3+" "+cantidadstudentsprint4)
 
-                 
+           document.getElementById('prom_hse').innerHTML = "Sprint1 "+number_format(porcentajestudentsupera1,0,'','')+'% Sprint2 '+number_format(porcentajestudentsupera2,0,'','')+'% Sprint3'+number_format(porcentajestudentsupera3,0,'','')+'Sprint4 '+number_format(porcentajestudentsupera4,0,'','')+'%<br>';
  
                
 	       //DETERMINANDO PORCENTAJE DE ESTUDIANTES SATISFECHAS
@@ -344,23 +345,23 @@ function procesarDatos()
 ///////////////////////////////////////////////////////////////////////////////////
 // Código Students
 
-//var input = document.querySelectorAll("label.check input");
-//if(input !== null) {
-  //[].forEach.call(input, function(el) {
-   // if(el.checked) {
-     // el.parentNode.classList.add('c_on');
-   // }
-    //el.addEventListener("click", function(event) {
-     // event.preventDefault();
-     // el.parentNode.classList.toggle('c_on');
-   // }, false);
-  //});
-//}
-//console.log(data);
-//var studentFinder = document.getElementById('studentFinder');
-//studentFinder.addEventListener('click', function() {
- //   alert('touch me')
-//})
+var input = document.querySelectorAll("label.check input");
+if(input !== null) {
+  [].forEach.call(input, function(el) {
+    if(el.checked) {
+      el.parentNode.classList.add('c_on');
+    }
+    el.addEventListener("click", function(event) {
+      event.preventDefault();
+      el.parentNode.classList.toggle('c_on');
+    }, false);
+  });
+}
+console.log(data);
+var studentFinder = document.getElementById('studentFinder');
+studentFinder.addEventListener('click', function() {
+    alert('touch me')
+})
 
 
 

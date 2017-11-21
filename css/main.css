@@ -185,6 +185,17 @@ color:#000;
 	display: inline-block;
 }
 
+
+.titulo_sede{
+	font-family:sans-serif;
+    font-size: 18px;
+    margin-left: 15px;
+    font-weight: bold;
+
+}
+
+
+
 .titulo {
     text-align: center;
     font-family:sans-serif;
@@ -267,6 +278,7 @@ color:#000;
 	background: #E1E1E1;
 	display: inline-block;
 	padding-top: 10px;
+
 }
 
 #nps_porcentaje {
@@ -275,6 +287,7 @@ color:#000;
 	background: #E1E1E1;
 	display: inline-block;
 	padding-top: 10px;
+	text-align: left;
 }
 
 #nps_promedio {
