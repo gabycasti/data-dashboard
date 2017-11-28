@@ -172,13 +172,13 @@ color:#000;
 	width: 75%;
 	margin-top: 200px;
 	float: right;
-	margin-top: -320px;
+	margin-top: -250px;
 	height: 650px;
 }
 
 #inscritas {
 	width: 28%;
-	height: 300px;
+	height: 150px;
 	background: #F7F7F7;
 	padding:10px;
 	margin: 10px;
@@ -265,7 +265,7 @@ color:#000;
 
 #nps {
 	width: 28%;
-	height: 300px;
+	height: 150px;
 	background: #F7F7F7;
 	padding:10px;
 	margin: 10px;
@@ -340,7 +340,7 @@ color:#000;
 
 #promedio {
 	width: 28%;
-	height: 300px;
+	height: 150px;
 	background: #F7F7F7;
 	padding:10px;
 	margin: 10px;
@@ -349,7 +349,7 @@ color:#000;
 
 #nps {
 	width: 28%;
-	height: 300px;
+	height: 150px;
 	background: #F7F7F7;
 	padding:10px;
 	margin: 10px;
@@ -366,7 +366,7 @@ color:#000;
 }
 
 
-/*  Estilos students*/
+/*  Estilos students agregados por la Majo que no se pudieron subir por problemas dcon github*/
 
 .checkbox {
   width: 30%;
@@ -441,6 +441,7 @@ label .text3 {
   display: inline-block;
   margin-top: 1%;
 }
+
 
 
 
