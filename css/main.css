@@ -1,447 +1,617 @@
 /*
- * Estilos de tu proyecto
- */
-
-body {
-	margin: 0 auto;
-	padding: 0;
-}
-
-/* Estilo sección del encabezado */
-#encabezado {
-	width: 100%;
-	height: 70px;
-	background: #FFC107;
-	float: right;
-	
-}
-
-/* Menu hamburguesa*/
-.nav {
-  height: 300px;
-  width: 20%;
-  position: absolute;
-  top: 50px;
-  display: none;
-  font-family:sans-serif;
-  font-size: 18px;
-  background-color: white;
-  overflow-y: scroll;
-}
-
-.nav li {
-  list-style-type: none;
-  display: block;
-  text-align: left;
-  line-height: 3;
-  color: #000000;
-  text-decoration: none;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 6px;
-}
-ul.nav_list {
-  width: 60%;
-}
-
-.nav-toggle {
-  display: none;
-  z-index: 50000;
-}
-
-.nav-toggle-label_one{
-	padding-top: 5px;
-	font-family:sans-serif;
-	padding-right: 10px;
-	font-size: 18px;
-	font-weight: bold;
-}
-
-
-
-.nav-toggle-label::after {
- font-family:sans-serif;
- font-size: 18px;
- font-weight: bold;
- content: "☰";
-}
-
-label {
-  cursor: pointer;
-}
-
-.nav-toggle:checked ~ .nav {
-  right: 0;
-  display: block;
-}
-
-.headmenu {
-  height: 45px;
-  text-align: right;
-  padding-top: 18px;
-}
-
-.header_main {
- 
-  height: 488px;
-  margin-right: 15px;
-  margin-left: auto;
-}
-/*Estilos pagina overview*/
-
-.primera {
-	width: 100%;
-
-}
-
-/*Estilo para el submenu del menu principal los checkbox */
-.nav_list  li input {
-	width: 15px;
-	height: 15px;
-	border-width: 2px;
-}
-
-
-/* Contenedor principal que almacena el segundo menu y el iframe*/
-.contenedor {
-	width: 100%;
-}
-
-
-/* Estilo para el logo de laboratoria  */
-.logo {
-	text-align: center;
-
-}
-
-/* Estilo para el  segundo menu de la pagina */
-#segundo_menu {
-	width: 25%;
-	height: 700px;
-	border-right: 1px solid #DCDCDC;
-	display: inline-block;
-}
-
-#menu_secundario{
-	margin-top: 10px;
-}
-
-#menu_secundario ul li active{
-	background: #DCDCDC;
-}
-
-.one {
-	list-style: none;
-
-}
-
-
-/* Estilo para los link del menu lateral izquierdo*/
-.one a {
-text-decoration:none;
-font-family:sans-serif;
-font-size: 18px;
-color:#000;
-}  
-
-
-.one li:hover {
-	width: 30%;
-	background: #DCDCDC;
-	cursor: pointer;
-	
-}
-
-
-#three {
-	width: 75%;
-	margin-top: 200px;
-	float: right;
-	margin-top: -690px;
-	height: 650px;
-}
-
-
-/*Estilos cuadro alumnas inscritas y desercion*/
-.primera{
-	display: block;
-
-}
-
-.cuarta {
-	width: 75%;
-	margin-top: 200px;
-	float: right;
-	margin-top: -250px;
-	height: 650px;
-}
-
-#inscritas {
-	width: 28%;
-	height: 150px;
-	background: #F7F7F7;
-	padding:10px;
-	margin: 10px;
-	display: inline-block;
-}
-
-
-.titulo_sede{
-	font-family:sans-serif;
-    font-size: 18px;
-    margin-left: 15px;
-    font-weight: bold;
-
-}
-
-
-
-.titulo {
-    text-align: center;
-    font-family:sans-serif;
-    font-size: 18px;
-    padding: 10px;
-    font-weight: bold;
-}
-
-.titulo_2 {
-	font-size: 15px;
-    padding: 10px;
-    font-weight: bold;
-	text-align: center;
-	display: block;
-}
-
-#alumnas_inscritas {
-	width: 45%;
-	background: #E1E1E1;
-	display: inline-block;
-	height: 20px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-
-#alumnas_inscritas_valor {
-	width: 45%;
-	height: 30px;
-	background: #E1E1E1;
-	display: inline-block;
-	padding-top: 10px;
-}
-
-#promedio_estudiante {
-	width: 45%;
-	height: 30px;
-	background: #E1E1E1;
-	display: inline-block;
-	padding-top: 10px;
-}
-
-#porcentaje_promedio {
-	width: 45%;
-	height: 30px;
-	background: #E1E1E1;
-	display: inline-block;
-	padding-top: 10px;
-}
-
-#alumnas_inscritas_porcentaje {
-	width: 45%;
-	height: 30px;
-	background: #E1E1E1;
-	display: inline-block;
-	padding-top: 10px;
-}
-
-#desercion_alumnas {
-	width: 45%;
-	background: #E1E1E1;
-	display: inline-block;
-	height: 20px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-
-}
-
-#nps {
-	width: 28%;
-	height: 150px;
-	background: #F7F7F7;
-	padding:10px;
-	margin: 10px;
-	display: inline-block;
-}
-
-#nps_valor {
-	width: 45%;
-	height: 30px;
-	background: #E1E1E1;
-	display: inline-block;
-	padding-top: 10px;
-
-}
-
-#nps_porcentaje {
-	width: 45%;
-	height: 65px;
-	background: #E1E1E1;
-	display: inline-block;
-	padding-top: 10px;
-	text-align: left;
-}
-
-#nps_promedio {
-	width: 45%;
-	background: #E1E1E1;
-	display: inline-block;
-	height: 20px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	margin-left: -121px;
-	
-}
-
-#contNPS {
-	margin-top: -30px;
-}
-
-#contNPSValor {
-	margin-top: -30px;
-}
-
-#nps_promoters {
-	width: 45%;
-	background: #E1E1E1;
-	
-	height: 10px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-
-}
-
-#nps_passive {
-	width: 45%;
-	background: #E1E1E1;
-	
-	height: 10px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-
-}
-#nps_detractor {
-	width: 45%;
-	background: #E1E1E1;
-	
-	height: 10px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-
-}
-
-#promedio {
-	width: 28%;
-	height: 150px;
-	background: #F7F7F7;
-	padding:10px;
-	margin: 10px;
-	display: inline-block;
-}
-
-#nps {
-	width: 28%;
-	height: 150px;
-	background: #F7F7F7;
-	padding:10px;
-	margin: 10px;
-	display: inline-block;
-}
-
-
-.quinta {
-	width: 75%;
-	margin-top: 200px;
-	float: right;
-	margin-top: -280px;
-	height: 650px;
-}
-
-
-/*  Estilos students agregados por la Majo que no se pudieron subir por problemas dcon github*/
-
-.checkbox {
-  width: 30%;
-  height: auto;
-  background-color: #fff;
-  float: left;
-  border-radius: 6px;
-  display: block;
-}
-.filter1 {
-  display: block;
-}
-input #checkbox1 {
-  display: inline-block;
-}
-label .text1 {
-  color: #3c4858;
-  size: 16px;
-  padding: 0px;
-  margin: 0px;
-  display: inline-block;
-}
-.filter2 {
-  display: block;
-}
-input #checkbox2 {
-  display: inline-block;
-}
-label .text2 {
-  color: #3c4858;
-  size: 16px;
-  padding: 0px;
-  margin: 0px;
-  display: inline-block;
-}
-.filter3 {
-  display: block;
-}
-input #checkbox3 {
-  display: inline-block;
-}
-label .text3 {
-  color: #3c4858;
-  size: 16px;
-  padding: 0px;
-  margin: 0px;
-  display: inline-block;
-}
-#container {
-  display: inline-block;
-  width: 50%;
-  border: none;
-  border-right: 1px solid gray;
-  border-bottom: 1px solid gray;
-  margin-left: 5%;
-  height: auto;
-  border-radius: 6px;
-}
-/* search */
-#studentFinder { 
-    background-repeat: no-repeat; 
-    width: 50%;
-    font-size: 16px;
-    border: none; 
-    height: 93%;
-    background: transparent;
-} 
-.fa-search {
-  color: #BCBCBC;
-  width: 5%;
-  height: 10%;
-  display: inline-block;
-  margin-top: 1%;
-}
-
-
-
-
+     * Estilos de tu proyecto
+     */
+    body {
+        margin: 0 auto;
+        padding: 0;
+    }
+    /* Estilo sección del encabezado */
+    #encabezado {
+        width: 100%;
+        height: 70px;
+        background: #FFC107;
+        float: right;   
+    }
+    /* Menu hamburguesa*/
+    .nav {
+      height: 300px;
+      width: 20%;
+      position: absolute;
+      top: 50px;
+      display: none;
+      font-family:sans-serif;
+      font-size: 18px;
+      background-color: white;
+      overflow-y: scroll;
+    }
+    .nav li {
+      list-style-type: none;
+      display: block;
+      text-align: left;
+      line-height: 3;
+      color: #000000;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 6px;
+    }
+    ul.nav_list {
+      width: 60%;
+    }
+    .nav-toggle {
+      display: none;
+      z-index: 50000;
+    }
+    .nav-toggle-label_one{
+        padding-top: 5px;
+        font-family:sans-serif;
+        padding-right: 10px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .nav-toggle-label::after {
+     font-family:sans-serif;
+     font-size: 18px;
+     font-weight: bold;
+     content: "☰";
+    }
+    label {
+      cursor: pointer;
+    }
+    .nav-toggle:checked ~ .nav {
+      right: 0;
+      display: block;
+    }
+    .headmenu {
+      height: 45px;
+      text-align: right;
+      padding-top: 18px;
+    }
+    .header_main {
+     
+      height: 488px;
+      margin-right: 15px;
+      margin-left: auto;
+    }
+    /*Estilos pagina overview*/
+    .primera {
+        width: 100%;
+    }
+    /*Estilo para el submenu del menu principal los checkbox */
+    .nav_list  li input {
+        width: 15px;
+        height: 15px;
+        border-width: 2px;
+    }
+    /* Contenedor principal que almacena el segundo menu y el iframe*/
+    .contenedor {
+        width: 100%;
+    }
+    /* Estilo para el logo de laboratoria  */
+    .logo {
+        text-align: center;
+        }
+    /* Estilo para el  segundo menu de la pagina */
+    #segundo_menu {
+        width: 25%;
+        height: 700px;
+        border-right: 1px solid #DCDCDC;
+        display: inline-block;
+        }
+    #menu_secundario{
+        margin-top: 10px;
+        }
+    #menu_secundario ul li active{
+        background: #DCDCDC;
+        }
+    .one {
+        list-style: none;
+    }
+    /*Estilos cuadro alumnas inscritas y desercion*/
+    .primera{
+        display: block;
+    }
+    .cuarta {
+        width: 75%;
+        margin-top: 200px;
+        float: right;
+        margin-top: -320px;
+        height: 650px;
+    }
+    #inscritas {
+        width: 28%;
+        height: 300px;
+        background: #F7F7F7;
+        padding:10px;
+        margin: 10px;
+        display: inline-block;
+    }
+    .titulo {
+        text-align: center;
+        font-family:sans-serif;
+        font-size: 18px;
+        padding: 10px;
+        font-weight: bold;
+    }
+    .titulo_2 {
+        font-size: 15px;
+        padding: 10px;
+        font-weight: bold;
+        text-align: center;
+        display: block;
+    }
+    #alumnas_inscritas {
+        width: 45%;
+        background: #E1E1E1;
+        display: inline-block;
+        height: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #alumnas_inscritas_valor {
+        width: 45%;
+        height: 30px;
+        background: #E1E1E1;
+        display: inline-block;
+        padding-top: 10px;
+    }
+    #promedio_estudiante {
+        width: 45%;
+        height: 30px;
+        background: #E1E1E1;
+        display: inline-block;
+        padding-top: 10px;
+    }
+    #porcentaje_promedio {
+        width: 45%;
+        height: 30px;
+        background: #E1E1E1;
+        display: inline-block;
+        padding-top: 10px;
+    }
+    #alumnas_inscritas_porcentaje {
+        width: 45%;
+        height: 30px;
+        background: #E1E1E1;
+        display: inline-block;
+        padding-top: 10px;
+    }
+    #desercion_alumnas {
+        width: 45%;
+        background: #E1E1E1;
+        display: inline-block;
+        height: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #nps {
+        width: 28%;
+        height: 300px;
+        background: #F7F7F7;
+        padding:10px;
+        margin: 10px;
+        display: inline-block;
+    }
+    #nps_valor {
+        width: 45%;
+        height: 30px;
+        background: #E1E1E1;
+        display: inline-block;
+        padding-top: 10px;
+    }
+    #nps_porcentaje {
+        width: 45%;
+        height: 65px;
+        background: #E1E1E1;
+        display: inline-block;
+        padding-top: 10px;
+    }
+    #nps_promedio {
+        width: 45%;
+        background: #E1E1E1;
+        display: inline-block;
+        height: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: -121px;
+        
+    }
+    #contNPS {
+        margin-top: -30px;
+    }
+    #contNPSValor {
+        margin-top: -30px;
+    }
+    #nps_promoters {
+        width: 45%;
+        background: #E1E1E1;
+        
+        height: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #nps_passive {
+        width: 45%;
+        background: #E1E1E1;
+        
+        height: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #nps_detractor {
+        width: 45%;
+        background: #E1E1E1;
+        
+        height: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #promedio {
+        width: 28%;
+        height: 300px;
+        background: #F7F7F7;
+        padding:10px;
+        margin: 10px;
+        display: inline-block;
+    }
+    #nps {
+        width: 28%;
+        height: 300px;
+        background: #F7F7F7;
+        padding:10px;
+        margin: 10px;
+        display: inline-block;
+    }
+    .quinta {
+        width: 75%;
+        margin-top: 200px;
+        float: right;
+        margin-top: -280px;
+        height: 650px;
+    }
+    /*  Estilos students*/
+    .checkbox {
+      width: 30%;
+      height: auto;
+      background-color: #fff;
+      float: left;
+      border-radius: 6px;
+      display: block;
+    }
+    .filter1 {
+      display: block;
+    }
+    input #checkbox1 {
+      display: inline-block;
+    }
+    label .text1 {
+      color: #3c4858;
+      size: 16px;
+      padding: 0px;
+      margin: 0px;
+      display: inline-block;
+    }
+    .filter2 {
+      display: block;
+    }
+    input #checkbox2 {
+      display: inline-block;
+    }
+    label .text2 {
+      color: #3c4858;
+      size: 16px;
+      padding: 0px;
+      margin: 0px;
+      display: inline-block;
+    }
+    .filter3 {
+      display: block;
+    }
+    input #checkbox3 {
+      display: inline-block;
+    }
+    label .text3 {
+        color: #3c4858;
+        size: 16px;
+        padding: 0px;
+        margin: 0px;
+        display: inline-block;
+    }
+    #container {
+        display: inline-block;
+        width: 50%;
+        border: none;
+        border-right: 1px solid gray;
+        border-bottom: 1px solid gray;
+        margin-left: 5%;
+        height: auto;
+        border-radius: 6px;
+    }
+    /* search */
+    #studentFinder { 
+        background-repeat: no-repeat; 
+        width: 50%;
+        font-size: 16px;
+        border: none; 
+        height: 93%;
+        background: transparent;
+    } 
+    .fa-search {
+        color: #BCBCBC;
+        width: 5%;
+        height: 10%;
+        display: inline-block;
+        margin-top: 1%;
+    }
+    /* Estilo para los link del menu lateral izquierdo*/
+    .one a {
+        text-decoration:none;
+        font-family:sans-serif;
+        font-size: 18px;
+        color:#000;
+    }  
+    .one li:hover {
+        width: 30%;
+        background: #DCDCDC;
+        cursor: pointer;    
+    }
+    #three {
+        width: 75%;
+        margin-top: 200px;
+        float: right;
+        margin-top: -690px;
+        height: 650px;
+    }
+    /*Estilos cuadro alumnas inscritas y desercion*/
+    .primera{
+        display: block;
+    }
+    #inscritas {
+        width: 28%;
+        height: 300px;
+        background: #F7F7F7;
+        padding:10px;
+        margin: 10px;
+        display: inline-block;
+    }
+    .titulo {
+        text-align: center;
+        font-family:sans-serif;
+        font-size: 18px;
+        padding: 10px;
+        font-weight: bold;
+    }
+    .titulo_2 {
+        font-size: 15px;
+        padding: 10px;
+        font-weight: bold;
+        text-align: center;
+        display: block;
+    }
+    #alumnas_inscritas {
+        width: 45%;
+        background: #E1E1E1;
+        display: inline-block;
+        height: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #alumnas_inscritas_valor {
+        width: 45%;
+        height: 30px;
+        background: #E1E1E1;
+        display: inline-block;
+        padding-top: 10px;
+    }
+    #promedio_estudiante {
+        width: 45%;
+        height: 30px;
+        background: #E1E1E1;
+        display: inline-block;
+        padding-top: 10px;
+    }
+    #porcentaje_promedio {
+        width: 45%;
+        height: 30px;
+        background: #E1E1E1;
+        display: inline-block;
+        padding-top: 10px;
+    }
+    #alumnas_inscritas_porcentaje {
+        width: 45%;
+        height: 30px;
+        background: #E1E1E1;
+        display: inline-block;
+        padding-top: 10px;
+    }
+    #desercion_alumnas {
+        width: 45%;
+        background: #E1E1E1;
+        display: inline-block;
+        height: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #nps {
+        width: 28%;
+        height: 300px;
+        background: #F7F7F7;
+        padding:10px;
+        margin: 10px;
+        display: inline-block;
+    }
+    #promedio {
+        width: 28%;
+        height: 300px;
+        background: #F7F7F7;
+        padding:10px;
+        margin: 10px;
+        display: inline-block;
+    }
+    /*  Estilos students*/
+    .checkbox {
+        width: 200px;
+        height: 150px;
+        background-color: #fff;
+        padding: 7px;
+        float: left;
+        border-style: solid;
+        border-color: gray;
+        border-radius: 6px;
+        margin-top: 20px;
+        margin-left: 42px;
+        display: block;
+        border: 2px solid gray;
+    }
+    .generation {
+        padding: 0;
+        margin: 0;
+        margin-top: 7px;
+        margin-bottom: 8px;
+        margin-left: 20px;
+    }
+    .filter1 {
+        margin-left: 16px;
+        display: block;
+    }
+    input #checkbox1 {
+        display: inline-block;
+    }
+    label .text1 {
+        color: #3c4858;
+        size: 16px;
+        padding: 0px;
+        margin: 0px;
+        display: inline-block;
+    }
+    .filter2 {
+        margin-left: 16px;
+        display: block;
+    }
+    input #checkbox2 {
+        display: inline-block;
+    }
+    label .text2 {
+        color: #3c4858;
+        size: 16px;
+        padding: 0px;
+        margin: 0px;
+        display: inline-block;
+    }
+    .filter3 {
+        margin-left: 16px;
+        display: block;
+    }
+    input #checkbox3 {
+        display: inline-block;
+    }
+    label .text3 {
+        color: #3c4858;
+        size: 16px;
+        padding: 0px;
+        margin: 0px;
+        display: inline-block;
+    }
+    #containersearch {
+        display: inline-block;
+        width: 50%;
+        border: none;
+        margin-top: 37px;
+        border-right: 2px solid gray;
+        border-bottom: 2px solid gray;
+        margin-left: 202px;
+        height: auto;
+        border-radius: 6px;
+    }
+    /* search */
+    #studentFinder { 
+        background-repeat: no-repeat; 
+        width: 50%;
+        font-size: 16px;
+        border: none; 
+        height: 93%;
+        background: transparent;
+    } 
+    .fa-search {
+        color: #BCBCBC;
+        width: 5%;
+        height: 10%;
+        display: inline-block;
+        margin-top: 1%;
+    }
+    /* seccion perfil alumnas */
+    .studentscontainer {
+        padding: 0;
+        margin: 0;
+        background-color: #F3C600;
+        border-bottom: 1px solid gray;
+        border-radius: 6px;
+        margin-left: 38px;
+        margin-top: 38px;
+        width: 650px;
+        height: 230px;
+        display: inline-block;
+    }
+    h2 {
+        padding: 0;
+        margin: 0;
+    }
+    .photo {
+        width: 150px;
+        height: 150px;
+        padding: 0;
+        margin: 0;
+        background-color: #ffffff;
+        margin-left: 23px;
+        margin-top: 27px;
+        border-radius: 6px;
+    }
+    #name {
+        width: 192px;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        background-color: #ffffff;
+        display: block;
+        margin-left: 185px;
+        margin-top: -149px;
+        border-radius: 6px;
+    }
+    .nombre {
+        margin: 0;
+        padding: 0;
+        font-style: normal;
+        font-size: 22px;
+        font-family: sans-serif;
+        text-align: center;
+    }
+    .gen {
+        margin: 0;
+        padding: 0;
+        font-style: normal;
+        font-size: 18px;
+        font-family: sans-serif;
+        text-align: center;
+    }
+    #tech {
+        width: 101px;
+        height: 144px;
+        padding: 0;
+        margin: 0;
+        display: block;
+        margin-left: 414px;
+        margin-top: -50px;
+        border-radius: 6px;
+        background-color: #ffffff;
+    }
+    #life {
+        width: 101px;
+        height: 144px;
+        padding: 0;
+        margin: 0;
+        display: block;
+        border-radius: 6px;
+        margin-top: -144px;
+        margin-left: 533px;
+        background-color: #ffffff;
+    }
